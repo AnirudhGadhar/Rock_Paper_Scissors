@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissors</title>
+      
+        <link rel="stylesheet" href="rock_paper_scissors.css">
+       
+    </head>
+    <body>
+
+        <button onclick="score.wins = 0;
+        score.losses = 0;
+        score.ties = 0;" class="reset_class"> Reset </button>
+       
+         <p class="title">Rock Paper Scissors</p>
+
+       
+
+                        <script>
+
+                const score=
+                {
+                    wins:0,
+                    losses:0,
+                    ties:0
+                };
+
+                        </script>
+                        
+
+
+
+        <button onclick="
+            const randomnumber = Math.random();
+            let computermove = '';
+
+            if(randomnumber < 1/3) {
+                computermove = 'Rock';
+            } else if(randomnumber < 2/3) {
+                computermove = 'Paper';
+            } else {
+                computermove = 'Scissors';
+            }
+
+            let result = '';
+            if(computermove === 'Rock') {
+                result = 'tie';
+            } else if(computermove === 'Paper') {
+                result = 'you lose';
+            } else if(computermove === 'Scissors') {
+                result = 'you win';
+            }
+                    
+            if(result === 'you win')
+                   {
+                    score.wins += 1;
+
+                   }
+                   else if(result === 'you lose')
+                    {
+                        score.losses+=1;
+
+                    }
+                    else if (result === 'tie')
+                    {
+                       score.ties += 1; 
+                    }
+
+                    alert(`You picked rock, computer picked ${computermove}. ${result} 
+            wins : ${score.wins} ,losses : ${score.losses} , tie:${score.ties}`);
+        " class="move_button"> <img src="rock-emoji.png" class="move_icon">   </button> 
+      
+        
+        <button onclick="
+            const randomnumb= Math.random();
+            let computermo = '';
+
+            if(randomnumb < 1/3) {
+                computermo= 'Rock';
+            } else if(randomnumb < 2/3) {
+                computermo = 'Paper';
+            } else {
+                computermo = 'Scissors';
+            }
+
+            let resu = '';
+            if(computermo === 'Rock') {
+                result = 'you win';
+            } else if(computermo === 'Paper') {
+                resu = 'tie';
+            } else if(computermo === 'Scissors') {
+                resu = 'you lose';
+            }
+            if(resu === 'you win')
+                   {
+                    score.wins += 1;
+
+                   }
+                   else if(resu === 'you lose')
+                    {
+                        score.losses+=1;
+
+                    }
+                    else if (resu === 'tie')
+                    {
+                       score.ties += 1; 
+                    }
+
+
+            alert(`You picked paper, computer picked ${computermo}. ${resu}  wins :  ${score.wins} ,losses : ${score.losses} , tie:${score.ties}`);
+        " class="move_button"> <img src="paper-emoji.png" class="move_icon">   </button>
+     
+        <button onclick="
+            const randomnumbe = Math.random();
+            let computermov = '';
+
+            if(randomnumbe < 1/3) {
+                computermov = 'Rock';
+            } else if(randomnumbe < 2/3) {
+                computermov = 'Paper';
+            } else {
+                computermov = 'Scissors';
+            }
+
+            let res = '';
+            if(computermov === 'Rock') {
+                res = 'you lose';
+            } else if(computermov === 'Paper') {
+                res = 'you win';
+            } else if(computermov === 'Scissors') {
+                res = 'tie';
+            }
+
+            if(res === 'you win')
+                   {
+                    score.wins += 1;
+
+                   }
+                   else if(res === 'you lose')
+                    {
+                        score.losses+=1;
+
+                    }
+                    else if (res === 'tie')
+                    {
+                       score.ties += 1; 
+                    }
+            alert(`You picked Scissors, computer picked ${computermov}. ${res}  wins : ${score.wins} ,losses : ${score.losses} , tie:${score.ties} `);
+        " class="move_button"><img src="scissors-emoji.png"    class="move_icon"> </button>
+
+  
+    
+    </body>
+</html>
